@@ -1,0 +1,31 @@
+{
+  "name": "titulo2",
+  "version": "1.0.0",
+  "description": "Proyecto de titulo 2",
+  "main": "server.js",
+  "scripts": {
+
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000"
+
+  },
+  "author": "Tomás Edwards Moraga",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
+    "supertest": "^6.2.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
