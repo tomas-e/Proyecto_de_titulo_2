@@ -4,17 +4,19 @@
   "description": "Proyecto de titulo 2",
   "main": "server.js",
   "scripts": {
-
     "start": "NODE_ENV=production node server",
     "dev": "nodemon server",
     "test": "cross-env NODE_ENV=test jest --testTimeout=10000"
-
   },
   "author": "Tomás Edwards Moraga",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "dotenv": "^16.0.1",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "pg": "^8.8.0",
+    "pine": "^1.1.1",
+    "sequelize": "^6.21.4"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
